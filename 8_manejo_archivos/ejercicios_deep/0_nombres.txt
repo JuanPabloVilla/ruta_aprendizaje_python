@@ -1,0 +1,6 @@
+juan 
+man 
+escoba 
+juan: 2
+villa: 4
+pablo: 34
