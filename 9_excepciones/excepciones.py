@@ -7,7 +7,7 @@
 Son errores que ocurren durante la ejecucion del programa. Normamente python detiene el programa cuando esto ocurre, bloqueandolo y evitando que continue. Al usar try y except evitamos que se detenga el flujo y podemos mostrar un mensaje en consola para saber que error esta ocurriendo sin necesidad de terminar el programa.
 '''
 
-#Tipos (comando basicos para usar)
+#comando basicos para usar
 
 '''
 ValueError - error en el valor (int("hola"))
