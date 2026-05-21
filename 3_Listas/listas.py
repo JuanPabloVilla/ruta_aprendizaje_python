@@ -1,8 +1,26 @@
 
-#-----------------
+#================================================================================
+
+#Que es
+
+'''
+Una lista es una colección ordenada y mutable de elementos. Es como un arreglo o vector en otros lenguajes.
+'''
+
+#================================================================================
+
+#Estructura Base
+
+lista0 = [1,2,3,"Manzana","banano",27]
+
+#================================================================================
+
+#comando basicos para usar
+
+'''
 
 numeros = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-numeros2 = [9,8,7,6,5,4,3,2,1]
+frase = "palabra a recortar"
 
 # Sintaxis: lista[inicio:fin:paso]
 print(numeros[2:5])     # [2, 3, 4] (índices 2, 3, 4)
@@ -12,9 +30,9 @@ print(numeros[::2])     # [0, 2, 4, 6, 8] (todos, de 2 en 2)
 print(numeros[::-1])    # [9, 8, 7, 6, 5, 4, 3, 2, 1, 0] (invertida)
 print(numeros[2:8:2])   # [2, 4, 6] (de 2 a 7, de 2 en 2)
 
-#-----------------
+#================================================================================
 
-#Metodos listas
+#Metodos
 
 print(len(numeros)) #Muestra el largo de la lista, tambien puede funcionar para rangos y en generla con objetos iterables
 
@@ -48,4 +66,52 @@ numeros.reverse() #voltea el orden de la lista
 
 numeros.count(1) #Muestra cuantas veces se repite un elemento
 
-#-----------------
+frase.split() #divide cada palabra de la frase a elementos de una lista
+
+
+'''
+
+#================================================================================
+
+#Ejemplos
+
+#Longitud de lista
+
+lista1= [1,2,3,4,"Juan","h"]
+print(len(lista1))
+
+#concantenacion
+
+lista2 = [1,2,3]
+lista3 = [4,5,6]
+print(lista2+lista3)
+
+#recorrer lista
+
+lista4 = ["platano", "banano", "mango"]
+for i in lista4:
+    print(f"fruta: {i}")
+
+#Recorrer lista con indice
+
+lista5 = [1,2,3,4,5]
+for i in range(len(lista5)):
+    print(f"Indice {i}: {lista5[i]}")
+
+
+#Lista de comprehension
+
+lista = [i+2 for i in range(5)]
+print(lista)
+
+#Numeros pares con lista de comprenhension
+
+numeros = [1,2,3,4,5,6,7,8,9]
+pares = [i for i in numeros if i % 2 == 0]
+print(numeros)
+
+#Matrices (Listas anidadas)
+
+matriz1 = [[1, 2, 3],[4, 5, 6],[7, 8, 9]]
+for i in matriz1:
+    print(i)
