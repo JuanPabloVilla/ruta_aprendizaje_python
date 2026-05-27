@@ -12,13 +12,6 @@ Una lista es una colección ordenada y mutable de elementos. Es como un arreglo 
 #Estructura Base
 
 lista0 = [1,2,3,"Manzana","banano",27]
-
-#================================================================================
-
-#comando basicos para usar
-
-'''
-
 numeros = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 frase = "palabra a recortar"
 
@@ -33,7 +26,7 @@ print(numeros[2:8:2])   # [2, 4, 6] (de 2 a 7, de 2 en 2)
 #================================================================================
 
 #Metodos
-
+'''
 print(len(numeros)) #Muestra el largo de la lista, tambien puede funcionar para rangos y en generla con objetos iterables
 
 print(numeros+numeros2) #Concatena las dos listas mostrando una sola lista
@@ -67,8 +60,6 @@ numeros.reverse() #voltea el orden de la lista
 numeros.count(1) #Muestra cuantas veces se repite un elemento
 
 frase.split() #divide cada palabra de la frase a elementos de una lista
-
-
 '''
 
 #================================================================================
