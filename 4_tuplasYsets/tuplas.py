@@ -1,31 +1,33 @@
 
-#-----------------
+#================================================================================
 
-#Las tulpas son colecciones ordenadas de elementos que no se pueden modificar
+#Que es
+
 '''
--Ordenadas
--Inmutables
--Diferentes tipos de datos
--Mas rapidas que las listas
+Son coleccion de datos (Como las listas) que no puede ser modificadas, es decir que no se les pueden añadir elmentos, eso las vuelve mas rapidas que las listas.
 '''
 
-''''''
-#LAS TUPLAS USAN EL MISMO INDICE QUE LAS LISTAS
+#================================================================================
 
-#A LAS TUPLAS NO SE LES PUEDE AÑADIR ELEMENTOS NUEVOS (CON POR EJEMPLO .APPEND)
-''''''
+#Estructura Base
 
-#-----------------
-
-lista = [1,2,3,"hola","buenas",True]
-tupla = (4,5,6,"como","estas",False)
+tupla1 = (4,5,6,"como","estas",False)
 tupla2 = (7,8,9,"bien",True)
 
-#Metodos Tuplas
+# Sintaxis: nombre_tupla[inicio:fin:paso]
+print(tupla1[0])  
+print(tupla1[2])   
+print(tupla1[-1])   
+print(tupla1[1:4]) 
 
+#================================================================================
+
+#comando basicos para usar
+
+'''
 tuple() #Crea una lista (o convierte una lista/set a tupla)
 
-tupla_larga = tupla+tupla2 #Combina las dos tuplas en una sola
+tupla_larga = tupla1+tupla2 #Combina las dos tuplas en una sola
 
 tupla_multiplicada = tupla*3 #Repite X veces el contenido de la lista
 
@@ -43,4 +45,10 @@ a = 5
 b = 10
 a,b = b,a #intercambia el valor 
 
+'''
 
+#================================================================================
+
+#Ejemplos
+
+'''Mirar ejercicios tuplas'''
