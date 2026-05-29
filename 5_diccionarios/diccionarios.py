@@ -1,18 +1,24 @@
-#Diccionarios
+
+#================================================================================
+
+#Que es
 
 '''
--Clave - valor
--No ordenado
--Mutable
--Claves unicas
--busqueda rapida (acceso directo por clave)
+Los diccionarios son colecciones de datos, no estan ordenados y son mutables. 
+Los diccionarios cuentan con una clave-valor, cada elemento tiene una clave unica y un valor agregado a la clave.
 '''
 
-#Metodos de diccionarios
-tupla = (["a",1],["b",2])
+#================================================================================
 
-diccionario = {"nombre":"juan","edad":20} #Variable de tipo diccionario
+#Estructura Base
 
+diccionario = {"nombre":"juan","edad":20}
+
+#================================================================================
+
+#comando basicos para usar
+
+'''
 variable = dict(nombre="variable",tipo="diccionario") #Crear diccionario en variable
 
 print(dict(tupla)) #convierte una tupla o lista a un diccionario
@@ -47,13 +53,20 @@ if "nombre" in diccionario: #Verificar existencia de clave
 
 if "juan" in diccionario.values(): #Verificar existencia de valor
     print("El valor existe")
-
-#================================================================================
+'''
 
 #Diccionario anidados
 
+'''
 tarea = {"descripcion":{"Trabajo":"Esta es una tarea"},"status":{"Estado":False}} #Crear un diccionario anidado
 
 tarea["status"]["Estado"] = True #Cambiar un dato anidado
 
 print(tarea)
+'''
+
+#================================================================================
+
+#Ejemplos
+
+'''Ver Ejercicios'''
