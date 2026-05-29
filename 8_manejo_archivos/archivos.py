@@ -1,14 +1,24 @@
 
 #================================================================================
 
-#nombre.txt sera una referencia
+#Que es
 
-#Abrir archivos
+'''
+Es una forma de leer o editar archivos (.txt, .xlsx, etc) por medio de python para guardar informacion
+'''
 
-archivo = open('nombre.txt','r') #Abrira el archivo (ver modo abajo)
-archivo.close() #cerrara el archivo
+#================================================================================
 
-#modos
+#Estructura basica
+
+archivo = open("nombre.txt","a") #Funcion open("Nombre_archivo","Modo")
+archivo.write("Hola mundo")
+archivo.close()
+
+#================================================================================
+
+#comando basicos para usar
+
 '''
 "r" #Read - solo lectura
 "r+" #Leer y escribir
@@ -19,24 +29,7 @@ archivo.close() #cerrara el archivo
 
 #================================================================================
 
-#Escribir en archivos
-
-#Modo "w" Sobreescribe todo
-
-archivo = open('nombre.txt','w')
-archivo.write("hola mundo\n")
-archivo.write("Segunda linea\n")
-archivo.close()
-
-#Modo "a" agrega al final (sin borrar)
-
-archivo = open('nombre.txt','a')
-archivo.write("Esta linea se agrega al final")
-archivo.close()
-
-#================================================================================
-
-#Leer archivos
+#Ejemplos
 
 #Leer todo el archivo
 
@@ -59,17 +52,18 @@ lineas = archivo.readlines() #Lista de lineas
 print(lineas)
 archivo.close()
 
-#================================================================================
+#Modo "a" agrega al final (sin borrar)
 
-#bloque with (Abre y cierra automatica (sin necesidad del .close()))
+archivo = open('nombre.txt','a')
+archivo.write("Esta linea se agrega al final")
+archivo.close()
 
-with open('nombre.txt','w') as archivo:
-    archivo.write("Esto es mas seguro\n")
-    archivo.write("No olvido cerrrar el archivo\n")
+#Modo "w" Sobreescribe todo
 
-#================================================================================
-
-#Ejemplos
+archivo = open('nombre.txt','w')
+archivo.write("hola mundo\n")
+archivo.write("Segunda linea\n")
+archivo.close()
 
 #Guardar lista 
 
@@ -91,6 +85,3 @@ with open('nombre.txt','r') as archivo:
 with open('nombres.txt','r') as archivo:
     lineas = archivo.readlines()
     print(f"El archivo tiene {len(lineas)} lineas")
-
-#================================================================================
-
