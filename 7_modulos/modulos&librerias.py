@@ -1,11 +1,15 @@
 
-#Los modulos son archivos .py que contienen funciones, variables y clases que puedes reutilizar
+#================================================================================
+
+#Que es
 
 '''
--NO reinventas la rueda
--Organizas mejor tu codigo
--Accedes a funcionalidades avanzadas facilmente
+Los modulos son extensiones .py que contienen un conjunto de funciones, variables o clases que pueden ser reutilizadas
 '''
+
+#================================================================================
+
+#Estructura Base
 
 #forma 1: importar todo el modulo
 import math
@@ -25,6 +29,9 @@ print(sqrt(69))
 
 #================================================================================
 
+#comando basicos para usar
+
+'''
 #Metodos libreria math
 
 import math
@@ -112,4 +119,13 @@ print(sys.version) #Version de python
 print(sys.argv) #argumentos de linea de comando (no entendi como funciona)
 sys.exit(0) #termina el programa actual
 print(sys.path) #ruta de busqueda de modulo (tampoco entendi este)
+'''
 
+#================================================================================
+
+
+#Ejemplos
+
+'''
+Ver ejercicios
+'''
