@@ -1,22 +1,24 @@
 
-#Que son las funciones
-'''
-Bloques de codigo reutilizables que realizan una tarea en especifico 
+#================================================================================
 
--Evita repetir codigo
--Organizas mejor tu programa
--Facilita encontrar y corregir errores
--Puedes usar la misam funcion muchas veces
+#Que es
+
+'''
+Las funciones son bloques de codigo reutilizables que realizan una tarea en especifico. Con esto se evita repetir codigo, organizar mejor el codigo y facilitar la correcion de errores
 '''
 
-#Definir y llamar funciones
+#================================================================================
+
+#Estructura Base
 
 def saludar(): #esta es la forma en la que se define una funciona
     print("Hola")
 
 saludar() #Al usar la funcion nos devolvera el contenido de adentro de la misma
 
-#==========================================================================================
+#================================================================================
+
+#Ejemplos
 
 #Funciones con parametros
 
@@ -25,14 +27,12 @@ def saludar_persona(nombre): #(nombre) es el parametro que usaremos.
 
 saludar_persona("Juan") 
 
-#Pueden ser multiples parametros
+#Multiples parametros
 
 def presentar(nombre,edad,ciudad):
     print(f"Soy {nombre}, tengo {edad} años y vivo en {ciudad}")
 
 presentar("juan",21,"medellin")
-
-#==========================================================================================
 
 #Funciones con retorno (return)
 
@@ -41,9 +41,6 @@ def suma(a,b):
     return(resultado)
 
 print(suma(2,2))
-
-total = suma(8,3)
-print(total)
 
 #Multiples return
 def mayor(edad):
@@ -54,36 +51,12 @@ def mayor(edad):
     
 print(mayor(21))
 
-#==========================================================================================
-
 #Parametros con valor por defecto
 
 def saludo(nombre, mensaje = "hola"):
     print(f"{mensaje} {nombre}")
-saludo("Juansito")
+saludo("Juan")
 
-#Ejemplo "real"
-
-def calcular_precio(precio, impuesto=0.19):
-    return precio * impuesto
-print(calcular_precio(100))
-
-#==========================================================================================
-
-#Parametros nombrados
-
-def presente(nombre,edad,ciudad):
-    print(f"Soy {nombre}, tengo {edad} años y vivo en {ciudad}")
-
-#normal
-
-presente("juan",21,"medellin")
-
-#Parametros normbrados
-
-presente(nombre="Juan", ciudad = "medellin", edad=21) #Orden no importa
-
-#==========================================================================================
 
 #Ambito de variables (Local y Global)
 
@@ -106,27 +79,3 @@ def incrimentar():
 
 incrimentar()
 print(contador)
-
-#==========================================================================================
-
-#Documentacion de funciones (Docstring)
-
-def sumar(c,d):
-    #(Texto de IA) la informacion que le demos entre "" sera la que diga en la documentacion
-    """
-    Suma dos números y devuelve el resultado.
-    
-    Parámetros:
-    a (int/float): Primer número
-    b (int/float): Segundo número
-    
-    Retorna:
-    int/float: La suma de a y b
-    """
-    return c+d
-
-#Para ver la documentacion
-help(sumar)
-print(sumar.__doc__)
-
-#==========================================================================================
