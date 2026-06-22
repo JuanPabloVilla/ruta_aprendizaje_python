@@ -17,6 +17,7 @@ TypeError - Sumar str con int
 IndexError - indice de una lista, diccionario, etc esta fuera del rango de la misma
 KeyError - clave de diccionario no encontrada
 FileNotFoundError - archivo (open) no encontrado
+overflow - excede el limite para un tipo de dato numerico
 '''
 #================================================================================
 
